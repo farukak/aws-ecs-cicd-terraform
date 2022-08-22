@@ -117,10 +117,3 @@ variable "source_repo_branch" {
 }
 
 
-# Image repo name for ECR
-
-variable "image_repo_name" {
-    description = "Image repo name"
-    type = string
-}
-
