@@ -1,5 +1,4 @@
 aws_region=""
-stack=""
 aws_ecr=""
 aws_profile=""
 source_repo_name=""

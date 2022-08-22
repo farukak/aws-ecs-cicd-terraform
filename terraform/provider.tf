@@ -2,19 +2,22 @@
 # AWS PROVIDER USING TF CLI
 # ---------------------------------------------------------------------------------------------------------------------
 
-# provider "aws" {
-#   profile = ""
-#   version = "~> 2.25"
-#   region  = "${var.aws_region}"
-# }
+ provider "aws" {
+   alias = ""
+   profile = ""
+   version = ""
+   region  = ""
+   allowed_account_ids = [""]
+ }
 
-# terraform {
-#   required_version = "~>0.12"
-#   backend "remote" {
-#     organization = "aws-isv"
-
-#     workspaces {
-#       name = "petclinic-fargate"
-#     }
-#   }
-# }
+  terraform {
+    required_version = "~>0.12"
+    backend "s3" {
+      encrypt        = true
+      bucket         = ""
+      region         = ""
+      key            = ""
+      dynamodb_table = ""
+      profile        = ""
+   }
+ }
