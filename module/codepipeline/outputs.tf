@@ -5,3 +5,7 @@ output "image_repo_url" {
 output "image_repo_arn" {
   value = aws_ecr_repository.image_repo.arn
 }
+
+output "source_repo_clone_url_http" {
+  value = aws_codecommit_repository.source_repo.clone_url_http
+}
